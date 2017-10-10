@@ -3,13 +3,13 @@ import sbt._
 object Dependencies {
 
   object Version {
-    val shapeless           = "2.3.2"
+    val shapeless = "2.3.2"
     val scalaMacrosParadise = "2.1.0"
-    val typesafeConfig      = "1.3.1"
-    val scalaTest           = "3.0.3"
-    val joda                = "2.9.9"
-    val jodaConvert         = "1.8.2"
-    val scalaCheck          = "1.13.5"
+    val typesafeConfig = "1.3.1"
+    val scalaTest = "3.0.3"
+    val joda = "2.9.9"
+    val jodaConvert = "1.8.2"
+    val scalaCheck = "1.13.5"
     val scalaCheckShapeless = "1.1.6"
   }
 
@@ -21,6 +21,6 @@ object Dependencies {
 
   // testing libraries
   val scalaTest = "org.scalatest" %% "scalatest" % Version.scalaTest % "test"
-  val scalaCheck = "org.scalacheck" %%  "scalacheck" % Version.scalaCheck % "test"
+  val scalaCheck = "org.scalacheck" %% "scalacheck" % Version.scalaCheck % "test"
   val scalaCheckShapeless = "com.github.alexarchambault" %% "scalacheck-shapeless_1.13" % Version.scalaCheckShapeless % "test"
 }
